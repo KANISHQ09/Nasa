@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+body {
+  color: white;
+}
+
+/* Hide vertical scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow:
+      0 0 20px rgba(59, 130, 246, 0.8),
+      0 0 40px rgba(59, 130, 246, 0.5),
+      0 0 60px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    text-shadow:
+      0 0 30px rgba(139, 92, 246, 0.9),
+      0 0 50px rgba(139, 92, 246, 0.6),
+      0 0 70px rgba(139, 92, 246, 0.4);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.duration-2000 {
+  transition-duration: 2000ms;
+}
