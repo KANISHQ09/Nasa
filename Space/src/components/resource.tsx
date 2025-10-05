@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Rocket, Database, Image, Globe, Calendar, ExternalLink, Satellite, Star } from 'lucide-react';
 import { Navigation } from '../components/Navbar'; // Import your custom nav
 
