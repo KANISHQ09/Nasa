@@ -80,7 +80,7 @@ export default function MissionsExperimentsPage() {
               transition: "all 1s ease-out",
             }}
           >
-            🚀 Missions & Experiments
+            Missions & Experiments
           </h1>
           <p
             style={{
@@ -292,7 +292,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   title: {
     fontSize: "3.5rem",
     fontWeight: "bold",
-    background: "linear-gradient(to right, #64c8ff, #a78bfa, #ff6b9d)",
+    background: "white",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     backgroundClip: "text",

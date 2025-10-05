@@ -204,7 +204,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     position: "relative",
     height: "70vh",
     minHeight: "500px",
-    backgroundImage: "url(https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg?auto=compress&cs=tinysrgb&w=1600)",
+    backgroundImage: "url(https://www.nasa.gov/wp-content/uploads/2022/09/maf_20220830_ksc_artemis1_epb_005_large.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     display: "flex",

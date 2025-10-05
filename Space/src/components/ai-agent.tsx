@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
-import { Send } from 'lucide-react';
+import { Send, Home } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 interface Message {
   role: "user" | "assistant";
@@ -11,6 +12,7 @@ function AiAgentPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [input, setInput] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -77,7 +79,7 @@ function AiAgentPage() {
   };
 
   return (
-    <div 
+    <div
       className="min-h-screen w-full flex flex-col text-white relative"
       style={{
         backgroundImage: `url('https://wallpapers.com/images/hd/space-aesthetic-colorful-galaxy-wxtxbwrpc88h3yny.jpg')`,
@@ -108,9 +110,8 @@ function AiAgentPage() {
                 key={index}
                 className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
               >
-                <div className={`max-w-[80%] rounded-2xl px-5 py-3 ${
-                  "bg-black/40 backdrop-blur-md text-white border border-white/30"
-                }`}>
+                <div className={`max-w-[80%] rounded-2xl px-5 py-3 ${"bg-black/40 backdrop-blur-md text-white border border-white/30"
+                  }`}>
                   <div className="leading-relaxed whitespace-pre-wrap">
                     {formatContent(message.content)}
                   </div>
@@ -135,7 +136,7 @@ function AiAgentPage() {
       </div>
 
       {/* Floating Input Bar */}
-      <form 
+      <form
         onSubmit={handleSubmit}
         className="fixed bottom-8 left-1/2 transform -translate-x-1/2 w-[92%] max-w-3xl"
       >
@@ -153,8 +154,15 @@ function AiAgentPage() {
             type="submit"
             disabled={!input.trim() || isLoading}
             className="h-12 w-12 rounded-2xl bg-black hover:bg-neutral-900 flex items-center justify-center transition-all disabled:opacity-50 disabled:cursor-not-allowed border border-gray-600 text-gray-200"
-         >
+          >
             <Send className="w-5 h-5 text-white" />
+          </button>
+          <button
+            type="button"
+            onClick={() => navigate("/")}
+            className="h-12 w-12 rounded-2xl bg-black hover:bg-neutral-900 flex items-center justify-center transition-all border border-gray-600 text-gray-200"
+          >
+            <Home className="w-5 h-5 text-white" />
           </button>
         </div>
       </form>

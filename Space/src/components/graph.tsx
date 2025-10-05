@@ -37,7 +37,7 @@ function App() {
                     "status": "Active",
                     "dataCollected": 2.4,
                     "efficiency": 96,
-                    "image": "https://mars.nasa.gov/system/news_items/main_images/9337_PIA23791-FigureA-web.jpg",
+                    "image": "https://images-assets.nasa.gov/image/PIA04591/PIA04591~orig.jpg",
                     "description": "Searching for signs of ancient life on Mars"
                 },
                 {
@@ -45,7 +45,7 @@ function App() {
                     "status": "Active",
                     "dataCollected": 4.8,
                     "efficiency": 98,
-                    "image": "https://webb.nasa.gov/content/webbLaunch/images/webb_teaser1.jpg",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2024/05/jwst_artist_concept_0.png",
                     "description": "Observing the most distant objects in the universe"
                 },
                 {
@@ -53,7 +53,7 @@ function App() {
                     "status": "Active",
                     "dataCollected": 3.2,
                     "efficiency": 94,
-                    "image": "https://www.nasa.gov/sites/default/files/thumbnails/image/iss062e115353.jpg",
+                    "image": "https://images-assets.nasa.gov/image/iss073e0813519/iss073e0813519~large.jpg?w=1024&h=683&fit=crop&crop=faces%2Cfocalpoint",
                     "description": "Conducting microgravity experiments in low Earth orbit"
                 },
                 {
@@ -61,7 +61,7 @@ function App() {
                     "status": "Planning",
                     "dataCollected": 1.1,
                     "efficiency": 92,
-                    "image": "https://www.nasa.gov/sites/default/files/thumbnails/image/artemis_2022.jpg",
+                    "image": "https://www.nasa.gov/wp-content/uploads/2025/09/ksc-20250929-ph-csh01-side-by-side.jpg?resize=1024,910",
                     "description": "Returning humans to the Moon and beyond"
                 },
                 {
@@ -69,7 +69,7 @@ function App() {
                     "status": "Active",
                     "dataCollected": 1.9,
                     "efficiency": 95,
-                    "image": "https://www.nasa.gov/sites/default/files/thumbnails/image/parker-solar-probe-web.jpg",
+                    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/internal_resources/5657/Parker_Swingby-1.jpeg?w=1600&h=900&fit=clip&crop=faces%2Cfocalpoint",
                     "description": "Touching the Sun to unlock solar mysteries"
                 },
                 {
@@ -77,7 +77,7 @@ function App() {
                     "status": "Active",
                     "dataCollected": 5.6,
                     "efficiency": 89,
-                    "image": "https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2001a-f-1600x900.png",
+                    "image": "https://science.nasa.gov/wp-content/uploads/2023/07/hubble-space-telescope-hst-6.jpg?resize=1969,2000",
                     "description": "Capturing stunning images of distant galaxies"
                 }
             ]
@@ -88,7 +88,7 @@ function App() {
                     title: 'Water Ice Discovered in Permanently Shadowed Craters',
                     mission: 'Lunar Reconnaissance Orbiter',
                     date: 'Oct 2024',
-                    image: 'https://images-assets.nasa.gov/image/PIA13496/PIA13496~medium.jpg'
+                    image: 'https://science.nasa.gov/wp-content/uploads/2017/11/174593main-lro-rendering.jpg'
                 },
                 {
                     title: 'Ancient River Delta Found on Mars',
@@ -100,7 +100,7 @@ function App() {
                     title: 'Exoplanet Atmosphere Analysis Reveals Biosignatures',
                     mission: 'James Webb Space Telescope',
                     date: 'Aug 2024',
-                    image: 'https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001327/GSFC_20171208_Archive_e001327~medium.jpg'
+                    image: 'https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/2023/09/h/holiday16x9.jpg?w=1600&h=900&fit=clip&crop=faces%2Cfocalpoint'
                 }
             ]);
 
@@ -149,7 +149,7 @@ function App() {
                 {/* NASA Hero Section */}
                 <div className="relative h-[500px] mb-16 overflow-hidden">
                     <img
-                        src="https://images-assets.nasa.gov/image/PIA23791/PIA23791~large.jpg"
+                        src="https://explorer1.jpl.nasa.gov/assets/images/galleries/cropped/1972_BlueMarble_115334main_image_feature_329_ys_full.jpg"
                         alt="Earth from Space"
                         className="absolute inset-0 w-full h-full object-cover"
                     />
