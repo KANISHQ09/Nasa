@@ -1,73 +1,112 @@
-# React + TypeScript + Vite
+# 🌌 NovaSync  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Made for NASA Space Apps Challenge 2025**  
+**Problem Statement:** *Build a Space Biology Knowledge Engine*  
+**Live Project:** [NovaSync](https://nasa-kohl.vercel.app/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Project Overview  
 
-## React Compiler
+**NovaSync** is an AI-powered, space-themed web application designed to help users explore and understand NASA’s bioscience research data effortlessly.  
+Developed for the **NASA Space Apps Challenge 2025**, under the problem statement *“Build a Space Biology Knowledge Engine,”* NovaSync transforms NASA’s 608 bioscience publications into meaningful insights using **Artificial Intelligence and interactive visualization**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Our system acts as a **knowledge engine** — enabling users to search, summarize, and analyze complex research data through an immersive space-inspired interface.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 AI Research Engine  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+At the core of **NovaSync** lies a custom-built **AI model** that:  
+- 🧬 **Processes NASA’s bioscience research papers** to extract key entities, findings, and insights.  
+- 🔍 **Summarizes** large text datasets (e.g., experiments, results, conclusions) into concise, user-friendly explanations.  
+- 🧠 **Enables semantic search**, allowing users to query natural language questions like *“What are the effects of microgravity on muscle tissue?”* and receive contextual answers.  
+- 🪐 **Finds patterns and correlations** across multiple studies to highlight progress, knowledge gaps, and research opportunities.  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This AI model is designed to make NASA’s scientific data **more accessible, insightful, and actionable** for researchers, mission planners, and the global community.  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🪐 Inspiration  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+NASA’s bioscience research holds the key to understanding life in space — yet much of it remains hidden behind complex text.  
+**NovaSync** aims to bridge that gap by combining **AI intelligence with immersive design**, allowing anyone to explore space biology through a futuristic, interactive experience.  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Our inspiration came from the idea of turning NASA’s open data into a **living galaxy of knowledge**, accessible through natural interaction and visual storytelling.  
+
+---
+
+## 🌠 Key Features  
+
+- 🧠 **AI-Powered Knowledge Engine** : Processes and summarizes NASA bioscience publications.  
+- 🔭 **Smart Search & Insights** : Query natural language questions and get AI-curated results.  
+- 🌌 **Space-Themed 3D Interface** : Animated, immersive design inspired by NASA’s visual identity.  
+- 🛰️ **Resource Integration** : Direct links to NASA’s OSDR, Task Book, and Life Sciences Library.  
+- 💫 **Cinematic Animations** : Smooth transitions, parallax scrolls, and cosmic visual effects.  
+
+---
+
+## 🧩 Vision & Design Philosophy  
+
+NovaSync is more than a web app - it’s an **interactive knowledge experience**.  
+Our design blends **science and storytelling** through:  
+- Minimal futuristic UI with deep space visuals.  
+- Smooth motion transitions reflecting cosmic navigation.  
+- Thoughtful typography and layout for readability.  
+- Scroll-based storytelling to guide users through NASA’s bioscience universe.  
+
+---
+
+## 🌌 Theme & Experience  
+
+Every aspect of NovaSync is inspired by **NASA’s vision of exploration**.  
+Users embark on a journey through space where research data becomes stars, missions become planets, and knowledge forms constellations.  
+
+Expect:  
+- 3D space animations with subtle glow effects.  
+- Video/gif space backgrounds for immersive feel.  
+- Layered animations and interactive sections.  
+- Scroll-driven storytelling powered by AI insights.  
+
+---
+
+## 🌍 Deployment  
+
+Experience **NovaSync** live here:  
+🔗 [NovaSync](https://nasa-kohl.vercel.app/)
+
+Hosted on **Vercel**, ensuring fast performance and seamless scalability across devices.  
+
+---
+
+## 🧑‍🚀 Team NovaSync  
+
+**Team Name:** CodeNext  
+**Challenge:** NASA Space Apps Challenge 2025  
+**Problem Statement:** *Build a Space Biology Knowledge Engine*  
+
+We are a team of AI enthusiasts, developers, and designers driven by curiosity and creativity.  
+Our mission is to make space science approachable and insightful through the power of artificial intelligence and user-centered design.  
+
+---
+
+## 💡 Future Enhancements  
+
+- 🧠 Integration of **LLMs (Large Language Models)** for deeper contextual understanding of NASA research.  
+- 🌐 **Knowledge Graph** connecting missions, experiments, and outcomes.  
+- 🎧 **Audio-reactive storytelling** for immersive exploration.  
+- 🪞 **VR-ready version** for next-generation scientific visualization.  
+- 🔗 Real-time integration with NASA’s Open APIs for continuous data updates.  
+
+---
+
+## 🛰️ Acknowledgements  
+
+- **NASA Space Apps Challenge** : for inspiring innovation through open data.  
+- **NASA OSDR, Life Sciences Library and Task Book** : for enabling transparent access to space bioscience.  
+- The **open-source community** : for tools, frameworks, and APIs that power NovaSync.  
+
+---
+
+### 🪄 “Where imagination meets innovation — we sync with the stars.”  
+**Team CodeNext | NovaSync | NASA Space Apps Challenge 2025**
