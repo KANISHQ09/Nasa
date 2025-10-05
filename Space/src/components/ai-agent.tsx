@@ -10,7 +10,6 @@ function AiAgentPage() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [input, setInput] = useState("");
-  const [error, setError] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -38,7 +37,6 @@ function AiAgentPage() {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setIsLoading(true);
-    setError(null);
 
     try {
       const response = await fetch("https://agent-prod.studio.lyzr.ai/v3/inference/chat/", {
@@ -55,18 +53,12 @@ function AiAgentPage() {
         }),
       });
 
-      if (!response.ok) throw new Error("Failed to get response");
-
       const data = await response.json();
       const assistantMessage: Message = {
         role: "assistant",
         content: data.response || "I received your message but couldn't generate a response."
       };
       setMessages((prev) => [...prev, assistantMessage]);
-    } catch (err) {
-      console.error("Error:", err);
-      setError("Failed to send message. Please try again.");
-      setTimeout(() => setError(null), 3000);
     } finally {
       setIsLoading(false);
     }
@@ -117,9 +109,7 @@ function AiAgentPage() {
                 className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div className={`max-w-[80%] rounded-2xl px-5 py-3 ${
-                  message.role === "user"
-                    ? "bg-black/40 backdrop-blur-md text-white border border-white/30"
-                    : "bg-black/40 backdrop-blur-md text-white border border-white/30"
+                  "bg-black/40 backdrop-blur-md text-white border border-white/30"
                 }`}>
                   <div className="leading-relaxed whitespace-pre-wrap">
                     {formatContent(message.content)}
